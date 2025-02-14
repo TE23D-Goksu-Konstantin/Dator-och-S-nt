@@ -1,0 +1,28 @@
+body
+{
+    background-color: #a5bbe2;
+
+    display: grid;
+    grid-template-columns: 4fr, 4fr, 4fr;
+    grid-template-rows: 10vh, 20vh, 20vh, 20vh;
+
+
+}
+
+
+#hPicture
+{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+h1
+{
+    grid-column: 4;
+    background-color: aliceblue;
+    padding-right: 15%;
+    padding: 3%;
+    margin-right: 15%;
+    border-radius: 50px;
+
+}
