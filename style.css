@@ -57,4 +57,90 @@ nav
     font-style: normal;
 }
 
+main.produkter 
+{
+    gap: 5px;
+    grid-column: 2 / 5;  
+    grid-row: 3 / 9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2vh);
+}
+.produkt1
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 1;
+    grid-row: 3;
+    margin-bottom: 200px;
+}
+
+.produkt2
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 2;
+    grid-row: 3/4;
+    margin-bottom: 200px;
+}
+
+.produkt3
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 3;
+    grid-row: 3/4;
+    margin-bottom: 200px;
+}
+
+.produkt4
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 1;
+    grid-row: 4;
+    margin-bottom: 200px;
+}
+
+.produkt5
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: 200px;
+}
+
+.produkt6
+{
+    border: black solid 2px;
+    background-color: aliceblue;
+    grid-column: 3;
+    grid-row: 4;
+    margin-bottom: 200px;
+}
+
+.produktRow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.musPekare
+{
+    max-height: 20px;
+    max-width: 20px;
+}
+
+button
+{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.produktBild
+{
+    max-height: 160px;
+    max-width: 160px;
+}
 
