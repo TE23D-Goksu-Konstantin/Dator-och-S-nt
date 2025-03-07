@@ -72,7 +72,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 1;
     grid-row: 3;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produkt2
@@ -81,7 +81,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 2;
     grid-row: 3/4;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produkt3
@@ -90,7 +90,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 3;
     grid-row: 3/4;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produkt4
@@ -99,7 +99,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 1;
     grid-row: 4;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produkt5
@@ -108,7 +108,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 2;
     grid-row: 4;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produkt6
@@ -117,7 +117,7 @@ main.produkter
     background-color: aliceblue;
     grid-column: 3;
     grid-row: 4;
-    margin-bottom: 200px;
+    margin-bottom: 10px;
 }
 
 .produktRow
@@ -162,7 +162,200 @@ h3
     padding-right: 5px;
 }
 
-@media screen and (min-width: 900px) 
+@media screen and (max-width: 820px) 
 {
+    body
+    {
+        background-color: #a5bbe2;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(11, 11.11vh);
+    
+    
+    }
+
+        #hPicture
+    {
+        max-width: 140px;
+        max-height: 140px;
+        padding-left: 20px;
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+
+    }
+
+        h1
+    {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        background-color: aliceblue;
+        padding-right: 15%;
+        font-size: xxx-large;
+        padding: 3%;
+        border-radius: 50px;
+        padding-bottom: 85px;
+        font-family: "Inria Sans", serif;
+    }
+
+            main.produkter 
+        {
+            gap: 5px;
+            grid-column: 2 / 4;  
+            grid-row: 3 / 9;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 2vh);
+        }
+
+        .produkt1
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 2;
+        grid-row: 2/4;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+
+    .produkt2
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 3;
+        grid-row: 2/4;
+        margin-bottom: 10px;
+    }
+
+    .produkt3
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 2;
+        grid-row: 4/6;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+
+    .produkt4
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 3;
+        grid-row: 4/6;
+        margin-bottom: 10px;
+    }
+
+    .produkt5
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 2;
+        grid-row: 6/8;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+
+    .produkt6
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 3;
+        grid-row: 6/8;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) 
+{
+    body
+    {
+        background-color: #a5bbe2;
+    
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+
+    
+    main.produkter 
+    {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produkt1
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 1;
+        grid-row: 3;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .produkt2
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 2;
+        grid-row: 3/4;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .produkt3
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 3;
+        grid-row: 3/4;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .produkt4
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 1;
+        grid-row: 4;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .produkt5
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 2;
+        grid-row: 4;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    .produkt6
+    {
+        border: black solid 2px;
+        background-color: aliceblue;
+        grid-column: 3;
+        grid-row: 4;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: 50px;
+    }
 
 }
