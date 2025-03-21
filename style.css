@@ -183,7 +183,10 @@ h3
     overflow-y: auto;
 }
 
-
+#fortsättKnapp
+{
+    padding-right: 100px;
+}
 
 #summa
 {
